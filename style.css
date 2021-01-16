@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  color: #7a0871;
+  font-weight: 600;
+  font-size: 3rem;
+  opacity: 0.8;
+}
+
+h2, p {
+  color: #c90bbf;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+h3 {
+  color: #7a0871;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+img {
+  height: 4rem;
+  width: 4rem;
+}
+
+.user img {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  border: 5px solid #da0fc9;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.user img:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  cursor: pointer;
+  -webkit-box-shadow: 10px 10px 10px rgba(56, 56, 56, 0.7);
+          box-shadow: 10px 10px 10px rgba(56, 56, 56, 0.7);
+}
+
+.link img {
+  height: 20px;
+  width: 20px;
+}
+
+.background {
+  width: 100%;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#c5128f), to(#800a97));
+  background-image: linear-gradient(to right top, #c5128f, #800a97);
+}
+
+.glass {
+  font-family: 'Poppins', sans-serif;
+  height: 80vh;
+  width: 70%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 225, 0.7)), to(rgba(255, 255, 225, 0.3)));
+  background: linear-gradient(to right, rgba(255, 255, 225, 0.7), rgba(255, 255, 225, 0.3));
+  position: absolute;
+  border-radius: 10px;
+  z-index: 2;
+  -webkit-backdrop-filter: blur(2rem);
+          backdrop-filter: blur(2rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.circle1, .circle2 {
+  position: absolute;
+  height: 30%;
+  width: 15%;
+  background: -webkit-gradient(linear, left top, right top, from(#ffffe1), to(rgba(255, 255, 225, 0.5)));
+  background: linear-gradient(to right, #ffffe1, rgba(255, 255, 225, 0.5));
+  border-radius: 50%;
+}
+
+.circle1 {
+  top: 2%;
+  left: 90%;
+  -webkit-transform: translate(-90%, -2%);
+          transform: translate(-90%, -2%);
+}
+
+.circle2 {
+  bottom: 2%;
+  left: 10%;
+  -webkit-transform: translate(-10%, -2%);
+          transform: translate(-10%, -2%);
+}
+
+.dashboard {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 225, 0.7)), to(rgba(255, 255, 225, 0.3)));
+  background: linear-gradient(to right, rgba(255, 255, 225, 0.7), rgba(255, 255, 225, 0.3));
+  border-radius: 10px;
+}
+
+.link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem 0rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.link, h2:hover {
+  cursor: pointer;
+}
+
+.links h2 {
+  font-size: 15px;
+  padding: 0 1rem;
+}
+
+.games {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.pro {
+  background: -webkit-gradient(linear, left bottom, right top, from(#c5128f), to(#800a97));
+  background: linear-gradient(to right top, #c5128f, #800a97);
+  border-radius: 20px;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+.pro:hover {
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+  cursor: pointer;
+  -webkit-box-shadow: 10px 10px 10px rgba(56, 56, 56, 0.7);
+          box-shadow: 10px 10px 10px rgba(56, 56, 56, 0.7);
+}
+
+.pro img {
+  margin-top: -8px;
+  margin-bottom: 7px;
+}
+
+.pro h2 {
+  font-size: 18px;
+  padding: 1rem;
+  color: white;
+  font-weight: 600;
+}
+
+/*----GAMES----*/
+.games h2 {
+  font-size: 20px;
+}
+
+.games p {
+  font-size: 15px;
+}
+
+.status {
+  margin-top: 25px;
+  margin-bottom: 3rem;
+  margin-left: 2rem;
+}
+
+.status h1 {
+  font-size: 30px;
+}
+
+.status input {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 225, 0.7)), to(rgba(255, 255, 225, 0.3)));
+  background: linear-gradient(to right, rgba(255, 255, 225, 0.7), rgba(255, 255, 225, 0.3));
+  border: none;
+}
+
+input {
+  width: 50%;
+  height: 30px;
+  border-radius: 50px;
+}
+
+.cards {
+  margin: 2rem 2rem;
+}
+
+.card {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 225, 0.9)), to(rgba(255, 255, 225, 0.658)));
+  background: linear-gradient(to right, rgba(255, 255, 225, 0.9), rgba(255, 255, 225, 0.658));
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.8);
+          box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.8);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+.card:hover {
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+  cursor: pointer;
+}
+
+.progress {
+  background: #c2bebe;
+  width: 100%;
+  height: 25%;
+  border-radius: 50px;
+  position: relative;
+}
+
+.progress::after {
+  content: "";
+  width: 60%;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, right top, from(#c5128f), to(#800a97));
+  background: linear-gradient(to right top, #c5128f, #800a97);
+  position: absolute;
+  border-radius: 50px;
+}
+
+.card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.percentage {
+  font-weight: bold;
+  background: -webkit-gradient(linear, left bottom, right top, from(#c5128f), to(#800a97));
+  background: linear-gradient(to right top, #c5128f, #800a97);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/*# sourceMappingURL=style.css.map */
